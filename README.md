@@ -1,8 +1,8 @@
 # Message Broker
 Message Broker with middleware and three different serialization mechanisms.
-1. XML
-2. JSON
-3. Pickle
+1. **XML**
+2. **JSON**
+3. **Pickle**
 
 ## Course
 This project was developed under the Distributed Computing course of [University of Aveiro](https://www.ua.pt/).
