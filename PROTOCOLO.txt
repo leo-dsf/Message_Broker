@@ -1,0 +1,23 @@
+JSON 1st 2 bytes, info has the size of the msg
+{"method": "ACK", "Serializer":msg_json}
+
+Topic publish message -> method "PUBLISH", 
+{'method': 'PUBLISH','topic':topic,'msg':msg}
+Answer:
+send a msg to all topics and supertopics
+{'method': 'MESSAGE','topic':topic,'msg':msg}
+
+Topic subscription message -> method "SUBSCRIBE"
+{'method': 'SUBSCRIBE','topic':topic,'msg':msg}
+Answer:
+Send to the client the last msg from this channel
+{'method': 'LAST_MESSAGE','topic':topic,'msg':msg}
+
+Topic list request message -> method "LIST_TOPICS"
+{'method': 'LIST_TOPICS','topic':topic,'msg':msg}
+Answer:
+Sends a msg with a list of topics
+{'method': 'LIST_TOPIC_ANSWER','topic':topic,'msg':msg}
+
+Topic unsubscription message -> method "UNSUBSCRIPTION"
+{'method': 'UNSUBSCRIPTION','topic':topic,'msg':msg}
