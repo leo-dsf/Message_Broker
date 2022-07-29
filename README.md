@@ -19,7 +19,7 @@ $ pip install -r requirements.txt
 
 ## How To Run Tests
 Run in two different terminal:
-* Run Server:
+* Run Broker:
 ```console
 $ python3 broker.py
 ```
