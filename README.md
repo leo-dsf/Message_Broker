@@ -18,11 +18,6 @@ $ pip install -r requirements.txt
 ```
 
 ## How To Run Tests
-Run in two different terminal:
-* Run Broker:
-```console
-$ python3 broker.py
-```
 * Run Tests:
 ```console
 $ pytest
